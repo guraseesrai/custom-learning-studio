@@ -53,3 +53,10 @@ custom_learning_studio/
 ```bash
 git clone https://github.com/yourusername/custom_learning_studio.git
 cd custom_learning_studio
+
+## 2. Install Python Dependencies
+
+```bash
+pip install -r requirements.txt
+
+
