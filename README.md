@@ -6,43 +6,33 @@
 
 ## ✨ Key Features
 
-- 🤖 AI-generated content using GPT-4 via LangChain
-- 📄 Upload `.pdf` or `.docx` to extract book content
-- 🎯 Input learning outcomes and get auto-generated structured scripts
-- 💾 Download results instantly as a `JSON` file
-- 🎉 Animated UI with confetti, dark mode, and live stats
-- ☁️ Optional cloud backup to AWS S3
+- 🤖 AI-generated content using GPT-4 via LangChain  
+- 📄 Upload `.pdf` or `.docx` to extract book content  
+- 🎯 Input learning outcomes and get auto-generated structured scripts  
+- 💾 Download results instantly as a `JSON` file  
+- 🎉 Animated UI with confetti, dark mode, and live stats  
+- ☁️ Optional cloud backup to AWS S3  
 
 ---
 
 ## 🧱 Project Structure
 
+\`\`\`
 custom_learning_studio/
-├── main.py # FastAPI backend API
-
-├── book_processor.py # PDF/Word parsing & GPT-4 integration
-
-├── llm_service.py # OpenAI API call logic
-
+├── main.py               # FastAPI backend API
+├── book_processor.py     # PDF/Word parsing & GPT-4 integration
+├── llm_service.py        # OpenAI API call logic
 ├── templates/
-
-│ └── index.html # Responsive UI (Bootstrap 5)
-
+│   └── index.html        # Responsive UI (Bootstrap 5)
 ├── static/
-
-│ ├── script.js # Frontend logic (JS)
-
-│ └── styles.css # Theme styles (CSS)
-
-├── uploads/ # Temporary file storage
-
-├── seed_scripts.json # Generated script output
-
-├── requirements.txt # Project dependencies
-
-├── .env # Environment variables
-
-└── key.env # Redundant key storage (not required)
+│   ├── script.js         # Frontend logic (JS)
+│   └── styles.css        # Theme styles (CSS)
+├── uploads/              # Temporary file storage
+├── seed_scripts.json     # Generated script output
+├── requirements.txt      # Project dependencies
+├── .env                  # Environment variables
+└── key.env               # Redundant key storage (not required)
+\`\`\`
 
 ---
 
@@ -50,13 +40,29 @@ custom_learning_studio/
 
 ### 1. Clone the Repository
 
-```bash
+\`\`\`bash
 git clone https://github.com/yourusername/custom_learning_studio.git
 cd custom_learning_studio
+\`\`\`
 
 ### 2. Install Python Dependencies
 
-```bash
+\`\`\`bash
 pip install -r requirements.txt
+\`\`\`
 
+### 3. Set Your Environment Variables
 
+Create a `.env` file in the root directory:
+
+\`\`\`ini
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+\`\`\`
+
+### 4. Run the FastAPI Server
+
+\`\`\`bash
+uvicorn main:app --reload
+\`\`\`
+
+Visit: [http://localhost:8000](http://localhost:8000)
