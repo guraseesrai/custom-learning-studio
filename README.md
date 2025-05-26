@@ -1,68 +1,34 @@
 # 🎓 Custom Learning Studio
 
-**Custom Learning Studio** is an interactive, AI-powered tool designed to generate structured learning scripts from PDF or Word documents based on user-defined learning outcomes. Built with **FastAPI**, **LangChain**, and **OpenAI GPT-4**, the system features a sleek frontend powered by **Bootstrap 5** and includes animations, dark mode, and downloadable results.
+**Custom Learning Studio** is an interactive, AI-powered tool that generates structured learning scripts from PDF or Word documents based on user-defined learning outcomes. Built with **FastAPI**, **LangChain**, and **OpenAI GPT-4**, the app ships with a modern **Bootstrap 5** frontend featuring dark mode, confetti animation, live stats, and instant JSON downloads.
 
 ---
 
 ## ✨ Key Features
 
 - 🤖 AI-generated content using GPT-4 via LangChain  
-- 📄 Upload `.pdf` or `.docx` to extract book content  
-- 🎯 Input learning outcomes and get auto-generated structured scripts  
-- 💾 Download results instantly as a `JSON` file  
-- 🎉 Animated UI with confetti, dark mode, and live stats  
+- 📄 Upload **`.pdf`** or **`.docx`** files to extract book/course content  
+- 🎯 Enter learning outcomes and receive auto-generated structured scripts  
+- 💾 Download results instantly as a **`JSON`** file  
+- 🎉 Animated UI with confetti, dark-mode toggle, and live counters  
 - ☁️ Optional cloud backup to AWS S3  
 
 ---
 
 ## 🧱 Project Structure
 
-\`\`\`
+```text
 custom_learning_studio/
-├── main.py               # FastAPI backend API
-├── book_processor.py     # PDF/Word parsing & GPT-4 integration
-├── llm_service.py        # OpenAI API call logic
+├── main.py               # FastAPI backend
+├── book_processor.py     # PDF/Word parsing & GPT-4 prompts
+├── llm_service.py        # OpenAI API helper
 ├── templates/
-│   └── index.html        # Responsive UI (Bootstrap 5)
+│   └── index.html        # Bootstrap 5 frontend
 ├── static/
-│   ├── script.js         # Frontend logic (JS)
-│   └── styles.css        # Theme styles (CSS)
+│   ├── script.js         # Frontend logic
+│   └── styles.css        # Theme styles (dark/light)
 ├── uploads/              # Temporary file storage
-├── seed_scripts.json     # Generated script output
-├── requirements.txt      # Project dependencies
+├── seed_scripts.json     # Example generated output
+├── requirements.txt      # Python dependencies
 ├── .env                  # Environment variables
-└── key.env               # Redundant key storage (not required)
-\`\`\`
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
-
-\`\`\`bash
-git clone https://github.com/yourusername/custom_learning_studio.git
-cd custom_learning_studio
-\`\`\`
-
-### 2. Install Python Dependencies
-
-\`\`\`bash
-pip install -r requirements.txt
-\`\`\`
-
-### 3. Set Your Environment Variables
-
-Create a `.env` file in the root directory:
-
-\`\`\`ini
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-\`\`\`
-
-### 4. Run the FastAPI Server
-
-\`\`\`bash
-uvicorn main:app --reload
-\`\`\`
-
-Visit: [http://localhost:8000](http://localhost:8000)
+└── key.env               # (optional) backup key storage
