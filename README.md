@@ -17,4 +17,17 @@
 
 ## 🧱 Project Structure
 
-<pre><code>custom_learning_studio/ ├── main.py # FastAPI backend API ├── book_processor.py # PDF/Word parsing & GPT-4 integration ├── llm_service.py # OpenAI API call logic ├── templates/ │ └── index.html # Responsive UI (Bootstrap 5) ├── static/ │ ├── script.js # Frontend logic (JS) │ └── styles.css # Theme styles (CSS) ├── uploads/ # Temporary file storage ├── seed_scripts.json # Generated script output ├── requirements.txt # Project dependencies ├── .env # Environment variables └── key.env # Redundant key storage (not required) </code></pre>d)
+custom_learning_studio/
+├── main.py # FastAPI backend API
+├── book_processor.py # PDF/Word parsing & GPT-4 integration
+├── llm_service.py # OpenAI API call logic
+├── templates/
+│ └── index.html # Responsive UI (Bootstrap 5)
+├── static/
+│ ├── script.js # Frontend logic (JS)
+│ └── styles.css # Theme styles (CSS)
+├── uploads/ # Temporary file storage
+├── seed_scripts.json # Generated script output
+├── requirements.txt # Project dependencies
+├── .env # Environment variables
+└── key.env # Redundant key storage (not required)
