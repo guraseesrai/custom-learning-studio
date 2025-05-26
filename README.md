@@ -43,3 +43,13 @@ custom_learning_studio/
 ├── .env # Environment variables
 
 └── key.env # Redundant key storage (not required)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/custom_learning_studio.git
+cd custom_learning_studio
