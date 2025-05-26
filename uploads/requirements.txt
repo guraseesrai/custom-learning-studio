@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+openai
+langchain_community
+tiktoken
+python-docx
