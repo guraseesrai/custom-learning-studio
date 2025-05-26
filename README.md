@@ -30,12 +30,9 @@ custom_learning_studio/
 │   ├── script.js         # Frontend logic and interactions
 │   └── styles.css        # Custom theme styles
 ├── uploads/              # Temporary file storage directory
-├── seed_scripts.json     # Example generated output
 ├── requirements.txt      # Python dependencies
 ├── .env                  # Environment variables (not committed)
-├── key.env               # Optional backup key storage
-├── README.md             # Project documentation
-└── LICENSE               # MIT License file
+└── key.env               # Optional backup key storage
 ```
 
 ---
